@@ -1,0 +1,35 @@
+<%- include('includes/head') %>
+<%- include('includes/nav') %>
+
+<div class="container">
+    <div class="row">
+      <div class="col-lg-2"></div>
+      <div class="col-lg-8 my-3">
+        <h1 class="display-1 text-center">To-Do List</h1>
+        <p class="text-center lead">Adicionar uma nova tarefa</p>
+      </div>
+  
+      <form action="/added" method="post">
+        <input type="hidden" name="_csrf" value=<%= csrfToken %>>
+          <div class="row">
+            <div class="col-lg mb-2">
+                <h4>Título da tarefa</h4>
+            </div>
+            <div class="form-floating mb-3">
+                <textarea class="form-control" name="titulo" id="floatingTextarea2" style="height: 10px; width: 100%;"></textarea>
+            </div>
+            <div class="col-lg mb-2">
+                <h4>Descrição</h4>
+            </div>
+            <div class="form-floating mb-3">
+                <textarea class="form-control" name="descricao" id="floatingTextarea2" style="height: 100px"></textarea>
+            </div>
+            <button type="submit" class="btn btn-secondary btn-lg">Adicionar</button>
+          </div>
+      </form>
+  
+      <div class="col-lg-2"></div>
+    </div>
+</div>
+
+<%- include('includes/footer') %>

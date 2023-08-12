@@ -1,0 +1,35 @@
+<%- include('includes/head')%>
+<%- include('includes/nav') %>
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-2"></div>
+    <div class="col-lg-8 my-3">
+      <h1 class="display-1 text-center">To-Do List</h1>
+      <p class="text-center lead">As suas tarefas à fazer estão abaixo</p>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <div class="alert alert-danger">Um erro qualquer.</div>
+      </div>
+    </div>
+
+    <div class="responsive-table">
+      <table class="table my-3">
+        <tr>
+          <td>
+            <input type="checkbox" name="isFinished" id="isFinished">
+          </td>
+          <td>
+            Levar o cachorro pra passear
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="col-lg-2"></div>
+  </div>
+</div>
+
+<%- include('includes/footer')%>
