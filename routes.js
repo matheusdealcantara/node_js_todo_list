@@ -9,6 +9,7 @@ route.get('/', homeController.paginaInicial);
 
 // Rotas de tarefas
 route.get('/addTask', taskController.addTask);
+
 route.post('/added', taskController.added);
 
 module.exports = route;

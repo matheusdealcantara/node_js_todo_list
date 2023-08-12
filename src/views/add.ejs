@@ -8,7 +8,9 @@
         <h1 class="display-1 text-center">To-Do List</h1>
         <p class="text-center lead">Adicionar uma nova tarefa</p>
       </div>
-  
+      
+      <%- include('./includes/messages') %>
+
       <form action="/added" method="post">
         <input type="hidden" name="_csrf" value=<%= csrfToken %>>
           <div class="row">
